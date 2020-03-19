@@ -1,6 +1,6 @@
 import cv2
 import sys
-from hand_coded_lane_follower import HandCodedLaneFollower
+from hand_coded_lane_follower_test_windows import HandCodedLaneFollower
 
 
 def save_image_and_steering_angle(video_file):
@@ -11,6 +11,8 @@ def save_image_and_steering_angle(video_file):
         i = 0
         while cap.isOpened():
             _, frame = cap.read()
+            if frame is None:
+                break
             lane_follower.follow_lane(frame)
             cv2.imwrite("%s_%03d_%03d.png" % (video_file, i, lane_follower.curr_steering_angle), frame)
             i += 1

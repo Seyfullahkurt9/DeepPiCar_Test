@@ -290,6 +290,10 @@ def make_points(frame, line):
     y1 = height  # bottom of the frame
     y2 = int(y1 * 1 / 2)  # make points from middle of the frame down
 
+    # Sıfıra bölme kontrolü
+    if abs(slope) < 0.001:  # slope sıfıra çok yakınsa
+        return [[int(width/2), y1, int(width/2), y2]]  # dikey çizgi döndür
+
     # bound the coordinates within the frame
     x1 = max(-width, min(2 * width, int((y1 - intercept) / slope)))
     x2 = max(-width, min(2 * width, int((y2 - intercept) / slope)))

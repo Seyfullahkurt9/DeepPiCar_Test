@@ -1,0 +1,138 @@
+INFO : Creating a ObjectsOnRoadProcessorWindows (Mock Version)...
+INFO : Mock Edge TPU initialized.
+INFO : \U0001f534 RED LIGHT: Stopping car
+INFO : [Red Traffic Light] object detected and is close by, taking action.
+INFO : Speed change: 40 \u2192 0
+INFO : FULL STOP for 1 second
+INFO : Creating a ObjectsOnRoadProcessorWindows (Mock Version)...
+INFO : Mock Edge TPU initialized.
+INFO : \U0001f7e2 GREEN LIGHT: Continue driving
+INFO : [Green Traffic Light] object detected and is close by, taking action.
+INFO : Speed change: 40 \u2192 40
+INFO : Creating a ObjectsOnRoadProcessorWindows (Mock Version)...
+INFO : Mock Edge TPU initialized.
+INFO : \U0001f464 PERSON DETECTED: Emergency stop!
+INFO : [Person] object detected and is close by, taking action.
+INFO : Speed change: 40 \u2192 0
+INFO : FULL STOP for 1 second
+INFO : Creating a ObjectsOnRoadProcessorWindows (Mock Version)...
+INFO : Mock Edge TPU initialized.
+INFO : \U0001f6d1 STOP SIGN: Starting 2 second wait
+INFO : [Stop Sign] object detected and is close by, taking action.
+INFO : Speed change: 40 \u2192 0
+INFO : FULL STOP for 1 second
+INFO : Creating a ObjectsOnRoadProcessorWindows (Mock Version)...
+INFO : Mock Edge TPU initialized.
+INFO : \U0001f6a6 SPEED LIMIT 25: Adjusting speed
+INFO : [Speed Limit 25] object detected and is close by, taking action.
+INFO : Speed change: 40 \u2192 25
+INFO : Creating a ObjectsOnRoadProcessorWindows (Mock Version)...
+INFO : Mock Edge TPU initialized.
+INFO : \U0001f6a6 SPEED LIMIT 40: Adjusting speed
+INFO : [Speed Limit 40] object detected and is close by, taking action.
+INFO : Speed change: 40 \u2192 40
+INFO : Creating a ObjectsOnRoadProcessorWindows (Mock Version)...
+INFO : Mock Edge TPU initialized.
+INFO : Speed change: 40 \u2192 40
+INFO : Creating a ObjectsOnRoadProcessorWindows (Mock Version)...
+INFO : Mock Edge TPU initialized.
+INFO : \U0001f6d1 STOP SIGN: Starting 2 second wait
+INFO : [Stop Sign] object detected and is close by, taking action.
+INFO : Speed change: 40 \u2192 0
+INFO : FULL STOP for 1 second
+INFO : [Stop Sign] object detected and is close by, taking action.
+INFO : Speed change: 0 \u2192 0
+INFO : FULL STOP for 1 second
+INFO : \U0001f7e2 GREEN LIGHT: Continue driving
+INFO : [Green Traffic Light] object detected and is close by, taking action.
+INFO : Speed change: 0 \u2192 40
+INFO : Creating a ObjectsOnRoadProcessorWindows (Mock Version)...
+INFO : Mock Edge TPU initialized.
+INFO : \U0001f534 RED LIGHT: Stopping car
+INFO : [Red Traffic Light] object detected and is close by, taking action.
+INFO : Speed change: 40 \u2192 0
+INFO : FULL STOP for 1 second
+INFO : Creating a ObjectsOnRoadProcessorWindows (Mock Version)...
+INFO : Mock Edge TPU initialized.
+INFO : \U0001f7e2 GREEN LIGHT: Continue driving
+INFO : [Green Traffic Light] object detected and is close by, taking action.
+INFO : Speed change: 40 \u2192 40
+INFO : Creating a ObjectsOnRoadProcessorWindows (Mock Version)...
+INFO : Mock Edge TPU initialized.
+INFO : \U0001f464 PERSON DETECTED: Emergency stop!
+INFO : [Person] object detected and is close by, taking action.
+INFO : Speed change: 40 \u2192 0
+INFO : FULL STOP for 1 second
+INFO : Creating a ObjectsOnRoadProcessorWindows (Mock Version)...
+INFO : Mock Edge TPU initialized.
+INFO : \U0001f6d1 STOP SIGN: Starting 2 second wait
+INFO : [Stop Sign] object detected and is close by, taking action.
+INFO : Speed change: 40 \u2192 0
+INFO : FULL STOP for 1 second
+INFO : Creating a ObjectsOnRoadProcessorWindows (Mock Version)...
+INFO : Mock Edge TPU initialized.
+INFO : \U0001f6a6 SPEED LIMIT 25: Adjusting speed
+INFO : [Speed Limit 25] object detected and is close by, taking action.
+INFO : Speed change: 40 \u2192 25
+INFO : Creating a ObjectsOnRoadProcessorWindows (Mock Version)...
+INFO : Mock Edge TPU initialized.
+INFO : \U0001f6a6 SPEED LIMIT 40: Adjusting speed
+INFO : [Speed Limit 40] object detected and is close by, taking action.
+INFO : Speed change: 40 \u2192 40
+INFO : Creating a ObjectsOnRoadProcessorWindows (Mock Version)...
+INFO : Mock Edge TPU initialized.
+INFO : Speed change: 40 \u2192 40
+Objects On Road Processor - Windows Test
+========================================
+
+=== Testing All Object Types ===
+
+--- Testing Red Traffic Light (red_light.jpg) ---
+Result: Speed = 0, Speed Limit = 40
+
+--- Testing Green Traffic Light (green_light.jpg) ---
+Result: Speed = 40, Speed Limit = 40
+
+--- Testing Person (person.jpg) ---
+Result: Speed = 0, Speed Limit = 40
+
+--- Testing Stop Sign (stop_sign.jpg) ---
+Result: Speed = 0, Speed Limit = 40
+
+--- Testing Speed Limit 25 (limit_25.jpg) ---
+Result: Speed = 25, Speed Limit = 25
+
+--- Testing Speed Limit 40 (limit_40.jpg) ---
+Result: Speed = 40, Speed Limit = 40
+
+--- Testing No Object (no_obj.jpg) ---
+Result: Speed = 40, Speed Limit = 40
+
+=== Testing Stop Sign Sequence ===
+1. First stop sign detection:
+2. Second detection (still waiting):
+3. Wait 2 seconds...
+4. After wait period - should resume:
+
+=== Testing photo: ../data/objects/red_light.jpg ===
+Final speed: 0
+
+=== Testing photo: ../data/objects/green_light.jpg ===
+Final speed: 40
+
+=== Testing photo: ../data/objects/person.jpg ===
+Final speed: 0
+
+=== Testing photo: ../data/objects/stop_sign.jpg ===
+Final speed: 0
+
+=== Testing photo: ../data/objects/limit_25.jpg ===
+Final speed: 25
+
+=== Testing photo: ../data/objects/limit_40.jpg ===
+Final speed: 40
+
+=== Testing photo: ../data/objects/no_obj.jpg ===
+Final speed: 40
+
+=== Test Completed ===

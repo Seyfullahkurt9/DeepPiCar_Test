@@ -1,0 +1,21 @@
+Test completed successfully!
+
+=== Testing photo: ../data/objects/green_light.jpg ===
+Final speed: 40
+
+=== Testing photo: ../data/objects/person.jpg ===
+Final speed: 0
+
+=== Testing photo: ../data/objects/stop_sign.jpg ===
+Final speed: 0
+
+=== Testing photo: ../data/objects/limit_25.jpg ===
+Final speed: 25
+
+=== Testing photo: ../data/objects/limit_40.jpg ===
+Final speed: 40
+
+=== Testing photo: ../data/objects/no_obj.jpg ===
+Final speed: 40
+
+=== Test Completed ===
