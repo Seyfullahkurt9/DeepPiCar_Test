@@ -82,14 +82,6 @@ if abs(slope) < 0.001:  # slope sıfıra çok yakınsa
     return [[int(width/2), y1, int(width/2), y2]]  # dikey çizgi döndür
 ```
 
-### Import Hatası Düzeltmeleri:
-**Problem:** Sınıf adı ve import path uyumsuzlukları
-
-**Çözümler:**
-```python
-# Sınıf adı düzeltmesi:
-with DeepPiCarWindows() as car:  # DeepPiCar() değil
-
 # Import path düzeltmesi:
 from hand_coded_lane_follower_test_windows import HandCodedLaneFollower
 # driver.code. prefix'i kaldırıldı
